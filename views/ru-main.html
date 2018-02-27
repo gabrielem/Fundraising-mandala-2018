@@ -4,109 +4,173 @@
 
 <div class="row">
   <div class="span8" id="mainContent">
-	<h2>Развесь свои Лунгта Флажки на Тибетский Новый Год</h2>
 
-Помогите нам поддержать язык, культуру и традиции Тибета, через Лунгта, которые будут развешаны в святом месте в Пхарпинге.
-<br><br>
 
-Ваши флажки будут развешаны нами в Пхарпинге,<br>
-принося вам удачу и скоординирует <br>
-ваш элемент с элементом Нового Года. <br>
-<br>
-
-Цена: 5 фунт за комплект Лунгта,комплект из флажков.<br>
-(Один комплект состоит из 5 флажков, по обычаю количество Лунгта соответствует количеству ваших лет).
-<br>
-<br>
-
-	Каждый флаг стоит 1 фунт, 1 комплект состоит из 5 флагов, <br />
-	и <b> минимальный заказ состоит из пяти флагов </b> (1 набор).
+    <h2>
+    Cari Amici Praticanti,
+    </h2>
+    <p>
+    l&#39;anno scorso ci siamo resi conto che con le nuove aperture del
+    Gonpa è possibile ora stendere due Mandala della Terra con il centro
+    medio.
+    <br>
+    Questa è una buonissima notizia, possiamo quindi Danzare con più
+    praticanti nel Tempio della Liberazione, il nostro Gonpa a Merigar
+    West.
+    <br>
+    Ora ci serve l&#39;aiuto di tutti voi per comprare due nuovi Mandala
+    stampati su un ottimo materiale antiriflesso e su cui si può scivolare
+    bene. I nostri vecchi Mandala portatili purtroppo erano fatti con un
+    Materiale antiscivolo e questo ci faceva rischiare di affaticare troppo
+    le ginocchia e i piedi. 
+    <br>
+    Con il nuovo spazio a disposizione, possiamo ordinare un Mandala
+    Solare e un Mandala della Terra. Qualche anno fa il Maestro ci aveva
+    chiesto di avere a disposizione un Mandala Solare e questa potrebbe
+    davvero essere l&#39;occasione giusta.
+    <br>
+    Con l&#39;aiuto di tutti, con piccole cifre e con somme raccolte in gruppo,
+    possiamo &quot;adottare&quot; una o più parti del Mandala della Terra, così
+    questa estate daremo la possibilità a molti più praticanti di Danzare
+    nel Gonpa.
+    <br>
+    Vi ringraziamo di cuore per il vostro aiuto e partecipazione.
+  </p> 
 
 
 	<br><br>
 	<button  ng-show="!showBuyThis" class="btn btn-large btn-primary" type="button" ng-click="showBuyThis = ! showBuyThis">
-		<i class="icon-shopping-cart icon-white"></i> Заказать сейчас
+		<i class="icon-shopping-cart icon-white"></i> Donate Now!
 	</button>
+	<br><br>
+
+
 
 	<div ng-show="showBuyThis" ng-animate="'boxBuy'" id="cartMini">
-		<i class="close" ng-click="showBuyThis = ! showBuyThis">близко</i>
+		<i class="close" ng-click="showBuyThis = ! showBuyThis">close</i>
 		<br>
 		<div class="product">
-			Выберите столько Лунгта сколько вы хотите купить:
+			Please,<br>
+			Select the kind of donation
 			<br>
-		<select type="text" ng-model="qta" name="qtaFlag">
-			<option ng-repeat="n in range(50)" ng-selected="$index==0" value="{{$index+1}}">{{$index+1}}</option>
-
+		<select type="text" ng-model="qta">
+      <option value="50" selected="selected">Centro Mandala thigle blu e bianco magari </option>
+      <option value="30">Centro Mandala triangoli rossi e verdi e giallo octa. magari si fa</option>
+      <option value="20">poi una section in un Thigle elemento  magari   </option>
+      <option value="30">poi un Triangolo rosso/giallo o Bianco dinuovo</option>
+      <option value="10">poi spazio verde esterno</option>
+      <option value="100">e poi il cerchio blu esterno</option>
 		</select>
-		<span class="total">{{qta*5}} фунт</span>
+		<span class="total">{{qta}} Euro</span>
 
 			<form ng-submit="addDonation()">
 			<div id="datiDonatore">
 				<div class="riga">
-					<div class="txt">Имя</div>
+					<div class="txt">Name</div>
 					<div class="field"><input class="dati" type="text" required ng-model="dname"></div>
 					<div style="clear:both;"></div>
 				</div>
 
 				<div class="riga">
-					<div class="txt">Фамилия</div>
+					<div class="txt">Surname</div>
 					<div class="field"><input class="dati" type="text" required ng-model="dsurname"></div>
 					<div style="clear:both;"></div>
 				</div>
 
 				<div class="riga">
-					<div class="txt">Е-майл</div>
+					<div class="txt">E-mail</div>
 					<div class="field"><input class="dati" type="email" required ng-model="demail"></div>
 					<div style="clear:both;"></div>
 				</div>
 
 				<div class="riga">
 					<select type="text" ng-model="dpaymenttype">
-						<option ng-repeat="payment in payment_types_ru" ng-selected="$index==0" value="{{payment.value}}">{{payment.name}}</option>
+						<option ng-repeat="payment in payment_types_en" ng-selected="$index==0" value="{{payment.value}}">{{payment.name}}</option>
 
 					</select>
 				</div>
-				* Пожалуйста, заполните все обязательные поля!
+				* Fill in all the fileds
 			</div>
 
 			<div>
 				<button type="submit"  class="btn btn-large btn-primary" type="button" ng-click="doBuy">
-				<i class="icon-shopping-cart icon-white"></i> Заказать сейчас
+				<i class="icon-shopping-cart icon-white"></i> Click to Donate!
 				</button>
 			</div>
 			</form>
 
-
 		</div>
 	</div>
 
-<!--
-<br><br>
-Покупая Лунгта вы поддерживаете Институт Шанг Шунг ВБ Редкий Художественный Проект.
--->
-<br><br>
-<!--  2014
-<h2>Институт Шанг Шунг ВБ Редкий Художественный Проект</h2>
-Институт Шанг Шунг ВБ собирается документировать Редкий Художественный Проект высококачественного Тибетского и Непальского искусства Невари (Newari). Съемку фильма будет делать Клив Арроусмит (Clive Arrowsmith), фотограф мирового класса и режиссер документальных фильмов, он тесно работает с Робертом Биэ (Robert Beer), который является одим из ведущих экспертов по Тибетскому и Неварскому искусству. У Роберта самая обширная коллекция роскошного Неварского искусства, собранная в течении многих лет у самых изысканных художников Непала. Так же будет снимать художников за работой в Непале благодаря их успешным работам. Роберт Биэ знаменит не только по его написанным танкам, но и по тому, что он написал Энциклопедию Тибетских символов и мотивов, один из авторитетных работ по этой теме, используемый как Тибетскими так и Западными художниками. В Непале о нем очень много говорят благодаря его опыту и знаниям, он востребован среди Непальских и Тибетских художников благодаря его советам и руководству.
--->
-<!--
-<h2>Проект Тибетский Язык, Шанг-Шунг Британия</h2>
 
-Язык - одна из важнейших основ культуры. Сегодня культура Тибета находится под угрозой, включая тибетский язык, который все больше приближается к грани исчезновения из-за государственной образовательной политики и того, что тибетская молодежь вынуждена говорить на других, коммерчески приспособленных, языках. Обширная литературная традиция, составляющая самое сердце тибетской культуры, пренебрежительно игнорируется властями, хотя она совершенно необходима для сохранения индивидуальности тибетского народа на благо будущих поколений. Тысячи текстов Тибетского Буддизма, многие из которых ожидают своего перевода, являются ценнейшим духовным наследием для всего мира.
-<br><br>
-Пожалуйста, помогите Институту Шанг-Шунг Британия сохранить тибетский язык. Мы просим вас поддержать запуск нового и комплексного литературно-образовательного онлайн ресурса, совмещенного с программой курсов по тибетскому языку, которые ведет доктор Фабиан Сандерс - профессор тибетского языка и культуры в университете "Universita` Ca` Foscari" в Венеции, который также является академическим директором Института Шанг-Шунг Британия. Этот шаг будет также способствовать продвижению программы переводов Шанг-Шунга, где группы филологов переводят тексты, предоставляя нам, западным людям, доступ к богатству древних знаний Тибета. Таким образом у вас будет доступ к онлайн платформе и изучению тибетского!
-<br><br>
-Купите для себя лунгта прямо сейчас, чтобы помочь процветанию Дхармы!
+<!-- 2014
+By buying Lungtas you are supporting the Shang Shung Institute UK Rare Art Project.
 -->
 
-<br><br><br>
-<img src="images/home.jpg" style="">
+	<br><br>
+
+<!-- 2014
+<h2>Shang Shung UK Rare Art Project</h2>
+	<p>The Shang Shung Institute UK is documenting a Rare Art Project of the highest quality Tibetan and Nepalese Newari art. Filming will be done by Clive Arrowsmith, a world class photographer and documentary film maker, working very closely with Robert Beer, one of the leading experts on Tibetan and Newari art. Robert also has the most extensive collection of superb Newari art, collected over many years from the most accomplished painters in Nepal. There will also be filming of the artists at work in Nepal through the progress of their work. Robert Beer is not only known for his thangka painting but also wrote The Encylopaedia of Tibetan symbols and Motifs, one of the most authoritative works on the subject, used both by Tibetan and Western artists. In Nepal he is very highly thought of for his expertise and knowledge and is much sought after by the Nepalese and Tibetan artists for his advice and guidance. </p>
+-->
+<!--
+<h2>Shang Shung Institute UK Tibetan Language Project</h2>
+
+Language is the very basis of a culture.
+Today Tibetan culture is under threat, including the language itself, due to state educational policies
+and young Tibetan's being forced to opt for studying more commercially viable languages.
+The vast literary tradition, constituting the very heart of Tibetan culture is neglected,
+but is essential for preserving the Tibetan people's identity for the benefit of future generations.
+The thousands of Tibetan Buddhist texts, many of which are yet to be translated, also represent a
+valuable spiritual treasure for the rest of the world.
 <br><br>
+Please help the Shang Shung Institute UK preserve the Tibetan language by setting up a new & comprehensive,
+online literary resource together with an ongoing program of Tibetan language
+courses led by Dr. Fabian Sanders, Professor of Tibetan Language and Culture at the Universita`
+Ca` Foscari in Venice and Academic Director of Shang Shung UK. This initiative will also help
+promote the Shang Shung translation program, where texts are translated by groups of scholars,
+enabling Westerners to access the wealth of ancient Tibetan knowledge. You will also be able
+to access the online platform and learn some Tibetan!
 <br><br>
+Buy your lungtas now and help the Dharma flourish!
+-->
+
+	<br><br>
+
+
+
+<!--
+	<br><br><br>
+  	<h2>Help us to maintain the language, culture and customs of Tibet</h2>
+-->
+
+<br>
+<img src="images/vajra-dance.jpg" style="">
+<br><br>
+
+<!--
+<img src="images/home.jpg" style="max-width: 300px;float:left;margin:5px 10px 0 0;">
+Historically, the hoisting of prayer flags to guarantee good fortune was an event that occurred within the nomadic communities of Tibet, however, this ritual effort has shifted in meaning by having assumed a more religious significance. The design of the flags also endured change as a more religious significance was acquired including the appearance of mantras and images. Auspicious symbols and images of four creatures of significant symbolic value (a garuda, a dragon, a snow lion and a tiger), along with the symbol of good fortune-- theWind horse-- are placed amongst the traditional texts of prayers, invocations and mantras. As the flags are hung, the writings and wishes that are inscribed upon the flag are said to be carried everywhere by the wind, blessings all sentient beings. You can buy as many lungtas as you want, but usually people buy the same number of flags as their years of age.
+-->
+<!--
+<br><br>
+
+<b>By Purchasing Lungtas, you are Supporting the Shang Shung Institute UK  Rare Art Project</b>
+<br>
+The Shang Shung Institute UK is working on a special project documenting and
+preserving the highest quality and rare Tibetan and Nepalese Newari art. Find out more...
+<br>
+-->
+
+
+  	<br><br>
+
+
+
 
   </div>
   <div class="span4" id="sidebar">
-  	<div ng-include src="'views/side/ru.html'"></div>
+  	<div ng-include src="'views/side/en.html'"></div>
 
 
   </div>

@@ -24,19 +24,22 @@
 
 
 
-	<div ng-show="showBuyThis" ng-animate="'boxBuy'" id="cartMini">
+  <div ng-show="showBuyThis" ng-animate="'boxBuy'" id="cartMini">
 		<i class="close" ng-click="showBuyThis = ! showBuyThis">close</i>
 		<br>
 		<div class="product">
 			Please,<br>
-			Select the number of Lungta's<br>
-			you wish to purchase (1 pack = 5 flags)
+			Select the kind of donation
 			<br>
 		<select type="text" ng-model="qta">
-			<option ng-repeat="n in range(50)" ng-selected="$index==0" value="{{$index+1}}">{{$index+1}} pack</option>
-
+      <option value="50" selected="selected">Centro Mandala thigle blu e bianco magari </option>
+      <option value="30">Centro Mandala triangoli rossi e verdi e giallo octa. magari si fa</option>
+      <option value="20">poi una section in un Thigle elemento  magari   </option>
+      <option value="30">poi un Triangolo rosso/giallo o Bianco dinuovo</option>
+      <option value="10">poi spazio verde esterno</option>
+      <option value="100">e poi il cerchio blu esterno</option>
 		</select>
-		<span class="total">{{qta*5}} Pounds</span>
+		<span class="total">{{qta}} Euro</span>
 
 			<form ng-submit="addDonation()">
 			<div id="datiDonatore">

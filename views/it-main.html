@@ -4,70 +4,97 @@
 
 <div class="row">
   <div class="span8" id="mainContent">
-	<h2>Issa le tue bandierine Lungta per il nuovo anno Tibetano.</h2>
 
-	<b>Aiutaci a mantenere in vita la lingua, cultura e tradizioni del Tibet issando lungta nel luogo sacro di Pharping.</b>
-	<br><br>
 
-	Le bandierine di preghiera saranno messe a Pharping,<br>
-	per portarti fortuna ed armonizzare<br>
-	i tuoi elementi con quelli dell’anno nuovo.
+    <h2>
+    Cari Amici Praticanti,
+    </h2>
+    <p>
+    l&#39;anno scorso ci siamo resi conto che con le nuove aperture del
+    Gonpa è possibile ora stendere due Mandala della Terra con il centro
+    medio.
+    <br>
+    Questa è una buonissima notizia, possiamo quindi Danzare con più
+    praticanti nel Tempio della Liberazione, il nostro Gonpa a Merigar
+    West.
+    <br>
+    Ora ci serve l&#39;aiuto di tutti voi per comprare due nuovi Mandala
+    stampati su un ottimo materiale antiriflesso e su cui si può scivolare
+    bene. I nostri vecchi Mandala portatili purtroppo erano fatti con un
+    Materiale antiscivolo e questo ci faceva rischiare di affaticare troppo
+    le ginocchia e i piedi. 
+    <br>
+    Con il nuovo spazio a disposizione, possiamo ordinare un Mandala
+    Solare e un Mandala della Terra. Qualche anno fa il Maestro ci aveva
+    chiesto di avere a disposizione un Mandala Solare e questa potrebbe
+    davvero essere l&#39;occasione giusta.
+    <br>
+    Con l&#39;aiuto di tutti, con piccole cifre e con somme raccolte in gruppo,
+    possiamo &quot;adottare&quot; una o più parti del Mandala della Terra, così
+    questa estate daremo la possibilità a molti più praticanti di Danzare
+    nel Gonpa.
+    <br>
+    Vi ringraziamo di cuore per il vostro aiuto e partecipazione.
+  </p> 
 
-	<br><br>
-	Costo: 5 sterline per ogni set di Lungta
-	<br>
-	(un set consiste di 5 bandierine, tradizionalmente si issa il numero di lungta equivalente alla propria eta’).
+
 	<br><br>
 	<button  ng-show="!showBuyThis" class="btn btn-large btn-primary" type="button" ng-click="showBuyThis = ! showBuyThis">
-		<i class="icon-shopping-cart icon-white"></i> Dona ora!
+		<i class="icon-shopping-cart icon-white"></i> Donate Now!
 	</button>
+	<br><br>
+
+
 
 	<div ng-show="showBuyThis" ng-animate="'boxBuy'" id="cartMini">
-		<i class="close" ng-click="showBuyThis = ! showBuyThis">chiudi</i>
+		<i class="close" ng-click="showBuyThis = ! showBuyThis">close</i>
 		<br>
 		<div class="product">
-			Bene,<br>
-			Imposta il numero di Lungta che vuoi<br>
-			e completa la tua donazione.
+			Please,<br>
+			Select the kind of donation
 			<br>
-		<select type="text" ng-model="qta" name="qtaFlag">
-			<option ng-repeat="n in range(50)" ng-selected="$index==0" value="{{$index+1}}">{{$index+1}}</option>
-
+		<select type="text" ng-model="qta">
+      <option value="50" selected="selected">Centro Mandala thigle blu e bianco magari </option>
+      <option value="30">Centro Mandala triangoli rossi e verdi e giallo octa. magari si fa</option>
+      <option value="20">poi una section in un Thigle elemento  magari   </option>
+      <option value="30">poi un Triangolo rosso/giallo o Bianco dinuovo</option>
+      <option value="10">poi spazio verde esterno</option>
+      <option value="100">e poi il cerchio blu esterno</option>
 		</select>
-		<span class="total">{{qta*5}} sterline</span>
+		<span class="total">{{qta}} Euro</span>
 
 			<form ng-submit="addDonation()">
 			<div id="datiDonatore">
 				<div class="riga">
-					<div class="txt">Nome</div>
+					<div class="txt">Name</div>
 					<div class="field"><input class="dati" type="text" required ng-model="dname"></div>
 					<div style="clear:both;"></div>
 				</div>
 
 				<div class="riga">
-					<div class="txt">Cognome</div>
+					<div class="txt">Surname</div>
 					<div class="field"><input class="dati" type="text" required ng-model="dsurname"></div>
 					<div style="clear:both;"></div>
 				</div>
 
 				<div class="riga">
 					<div class="txt">E-mail</div>
-					<div class="field"><input class="dati" type="email" required  ng-model="demail"></div>
+					<div class="field"><input class="dati" type="email" required ng-model="demail"></div>
 					<div style="clear:both;"></div>
 				</div>
 
 				<div class="riga">
 					<select type="text" ng-model="dpaymenttype">
-						<option ng-repeat="payment in payment_types_it" ng-selected="$index==0" value="{{payment.value}}">{{payment.name}}</option>
+						<option ng-repeat="payment in payment_types_en" ng-selected="$index==0" value="{{payment.value}}">{{payment.name}}</option>
 
 					</select>
 				</div>
-				* Compila tutti i campi
+				* Fill in all the fileds
 			</div>
 
 			<div>
 				<button type="submit"  class="btn btn-large btn-primary" type="button" ng-click="doBuy">
-				<i class="icon-shopping-cart icon-white"></i> Acquista ora!
+				<i class="icon-shopping-cart icon-white"></i> Click to Donate!
 				</button>
 			</div>
 			</form>
@@ -75,48 +102,75 @@
 		</div>
 	</div>
 
-<!--
-<br><br>
-Acquistando le lungta stai sostenendo il Progetto Arte Rara dell’Istituto Shang Shung del Regno Unito.
+
+<!-- 2014
+By buying Lungtas you are supporting the Shang Shung Institute UK Rare Art Project.
 -->
+
 	<br><br>
 
-<!--
-<h2>Progetto Arte Rara</h2>
-	<p>
-	<b>L’istituto Shang Shung del Regno Unito sta documentando pezzi di arte storica, Tibetana e Newari di primissima qualita’. Le riprese saranno eseguite dal rinomato fotografo e regista</b>
-	Clive Arrowsmith, che lavorera’ a fianco di Robert Beer,
-	uno dei massimi esperti mondiali di arte Tibetana e Newari. Robert è anche
-	proprietario di una tra le massime collezioni di arte Newari, frutto di anni di
-	lavoro di ricerca e selezione tra i migliori artisti nepalesi. Gli artisti saranno
-	filmati mentre sono all’opera sui propri lavori. Robert Beer non è conosciuto
-	solo per la pittura thangka: è infatti autore dell'Enciclopedia dei Simboli e
-	Motivi Tibetani, uno dei più autorevoli lavori di ricerca sull'argomento,
-	utlizzata sia da artisti occidentali che dagli stessi tibetani come indiscussa
-	referenza. In Nepal Beer è tenuto in grande considerazione per la sua
-	esperienza e conoscenza in materia e risponde a molte richieste di
-	consulenza da parte di artisti sia tibetani che nepalesi.
-	</p>
+<!-- 2014
+<h2>Shang Shung UK Rare Art Project</h2>
+	<p>The Shang Shung Institute UK is documenting a Rare Art Project of the highest quality Tibetan and Nepalese Newari art. Filming will be done by Clive Arrowsmith, a world class photographer and documentary film maker, working very closely with Robert Beer, one of the leading experts on Tibetan and Newari art. Robert also has the most extensive collection of superb Newari art, collected over many years from the most accomplished painters in Nepal. There will also be filming of the artists at work in Nepal through the progress of their work. Robert Beer is not only known for his thangka painting but also wrote The Encylopaedia of Tibetan symbols and Motifs, one of the most authoritative works on the subject, used both by Tibetan and Western artists. In Nepal he is very highly thought of for his expertise and knowledge and is much sought after by the Nepalese and Tibetan artists for his advice and guidance. </p>
 -->
 <!--
 <h2>Shang Shung Institute UK Tibetan Language Project</h2>
-La lingua e' la vera base di una cultura. Oggi non solo la cultura tibetana e' minacciata, ma lo e' il linguaggio stesso, a causa di politiche educative statali, e i giovani tibetani vengono forzati a optare per lo studio di linguaggi commercialmente validi. La vasta tradizione letteraria, costituente il vero centro della cultura tibetana,  e' trascurata, ma e' essenziale per preservare l'identita' del popolo tibetano, a beneficio delle future generazioni. Le migliaia di testi di Buddhismo Tibetano, molti dei quali devono essere ancora tradotti, rappresentano inoltre un importante tesoro spirituale per il resto del mondo.
+
+Language is the very basis of a culture.
+Today Tibetan culture is under threat, including the language itself, due to state educational policies
+and young Tibetan's being forced to opt for studying more commercially viable languages.
+The vast literary tradition, constituting the very heart of Tibetan culture is neglected,
+but is essential for preserving the Tibetan people's identity for the benefit of future generations.
+The thousands of Tibetan Buddhist texts, many of which are yet to be translated, also represent a
+valuable spiritual treasure for the rest of the world.
 <br><br>
-Puoi aiutare a preservare il linguaggio Tibetano attraverso l'istituto Shang Shung del Regno Unito, che sta creando un archivio letterario online, insieme ad un programma di corsi li lingua Tibetana diretto dal Dr. Fabian Sanders, professore di Lingua e Cultura Tibetana all'universita' Ca' Foscari di Venenzia, e direttore accademico della Shang Shung del regno unito. Questa iniziativa aiutera' inoltre a promuovere il programma di traduzione Shang Shung, dove i testi vengono tradotti da gruppi di studenti, cosi' dando una possibilita' agli occidentali di accedere al tesoro dell'antica conoscenza tibetana. Vi sara' anche possibile accedere alla piattaforma online ed imparare un po' di tibetano!
+Please help the Shang Shung Institute UK preserve the Tibetan language by setting up a new & comprehensive,
+online literary resource together with an ongoing program of Tibetan language
+courses led by Dr. Fabian Sanders, Professor of Tibetan Language and Culture at the Universita`
+Ca` Foscari in Venice and Academic Director of Shang Shung UK. This initiative will also help
+promote the Shang Shung translation program, where texts are translated by groups of scholars,
+enabling Westerners to access the wealth of ancient Tibetan knowledge. You will also be able
+to access the online platform and learn some Tibetan!
 <br><br>
-Comprate le vostre lungta adesso e aiutate il Dharma a  prosperare!
+Buy your lungtas now and help the Dharma flourish!
 -->
 
-<br><br><br>
-<img src="images/home.jpg" style="">
+	<br><br>
+
+
+
+<!--
+	<br><br><br>
+  	<h2>Help us to maintain the language, culture and customs of Tibet</h2>
+-->
+
+<br>
+<img src="images/vajra-dance.jpg" style="">
 <br><br>
+
+<!--
+<img src="images/home.jpg" style="max-width: 300px;float:left;margin:5px 10px 0 0;">
+Historically, the hoisting of prayer flags to guarantee good fortune was an event that occurred within the nomadic communities of Tibet, however, this ritual effort has shifted in meaning by having assumed a more religious significance. The design of the flags also endured change as a more religious significance was acquired including the appearance of mantras and images. Auspicious symbols and images of four creatures of significant symbolic value (a garuda, a dragon, a snow lion and a tiger), along with the symbol of good fortune-- theWind horse-- are placed amongst the traditional texts of prayers, invocations and mantras. As the flags are hung, the writings and wishes that are inscribed upon the flag are said to be carried everywhere by the wind, blessings all sentient beings. You can buy as many lungtas as you want, but usually people buy the same number of flags as their years of age.
+-->
+<!--
 <br><br>
+
+<b>By Purchasing Lungtas, you are Supporting the Shang Shung Institute UK  Rare Art Project</b>
+<br>
+The Shang Shung Institute UK is working on a special project documenting and
+preserving the highest quality and rare Tibetan and Nepalese Newari art. Find out more...
+<br>
+-->
+
+
+  	<br><br>
+
 
 
 
   </div>
   <div class="span4" id="sidebar">
-  	<div ng-include src="'views/side/it.html'"></div>
+  	<div ng-include src="'views/side/en.html'"></div>
 
 
   </div>
