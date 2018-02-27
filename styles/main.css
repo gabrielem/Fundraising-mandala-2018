@@ -6,7 +6,7 @@ body {
 }
 
 .hero-unit {
-    
+
     width: 100%;
     font-size: 18px;
     font-weight: 200;
@@ -23,7 +23,7 @@ body {
     font-size: 80px;
     line-height: 1;
     letter-spacing: -1px;
-    color:#0088cc;
+    color:#891b80;
     font-family: 'Lily Script One', cursive;
 }
 .hero-unit h2 {
@@ -51,7 +51,12 @@ font-family: 'Annie Use Your Telescope', cursive;
 }
 
 
-#sidebar{}
+#sidebar{
+  background: #891b80;color:#ffffff;
+}
+#sidebar .content{
+  padding: 10px;
+}
 #sidebar h2{font-size:25px;font-family: 'Annie Use Your Telescope', cursive;}
 
 
@@ -89,7 +94,7 @@ padding:5px;
     display:block;
     font-size:21px;
     color:#0088cc;
-    
+
     padding:9px;
     width:300px;
     text-align: center;
@@ -135,7 +140,7 @@ input.dati:hover{border:1px solid #afafaf;}
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
- 
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -168,7 +173,7 @@ span.euroForPya{
     display:block;
     font-size:21px;
     color:#0088cc;
-    
+
     padding:9px;
     width:300px;
     text-align: center;
@@ -184,8 +189,8 @@ border-radius: 5px;
     margin:9px;
     display:block;
     font-size:15px;
-    
-    
+
+
     padding:9px;
     width:90%;
     text-align: left;

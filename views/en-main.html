@@ -4,23 +4,43 @@
 
 <div class="row">
   <div class="span8" id="mainContent">
-  	<h2>Hang your Lungta Flags for Tibetan New Year</h2>
-  	<b>Help us to maintain the language, culture and traditions of Tibet by hanging lungtas in the sacred place of Pharping.</b>
-  	<br>
-	Your flags will be hung by us in Pharping,
-	<br>
-	bringing you good fortune and coordinating
-	<br>
-	your elements with those of the New Year.
 
-	<br><br>
-	Cost: 5 pounds per set of Lungta flags
-	<br>
-	(One set is made up of 5 flags, it is customary to hang the number of Lungta corresponding to your age).
+
+    <h2>
+    Cari Amici Praticanti,
+    </h2>
+    <p>
+    l&#39;anno scorso ci siamo resi conto che con le nuove aperture del
+    Gonpa è possibile ora stendere due Mandala della Terra con il centro
+    medio.
+    <br>
+    Questa è una buonissima notizia, possiamo quindi Danzare con più
+    praticanti nel Tempio della Liberazione, il nostro Gonpa a Merigar
+    West.
+    <br>
+    Ora ci serve l&#39;aiuto di tutti voi per comprare due nuovi Mandala
+    stampati su un ottimo materiale antiriflesso e su cui si può scivolare
+    bene. I nostri vecchi Mandala portatili purtroppo erano fatti con un
+    Materiale antiscivolo e questo ci faceva rischiare di affaticare troppo
+    le ginocchia e i piedi. 
+    <br>
+    Con il nuovo spazio a disposizione, possiamo ordinare un Mandala
+    Solare e un Mandala della Terra. Qualche anno fa il Maestro ci aveva
+    chiesto di avere a disposizione un Mandala Solare e questa potrebbe
+    davvero essere l&#39;occasione giusta.
+    <br>
+    Con l&#39;aiuto di tutti, con piccole cifre e con somme raccolte in gruppo,
+    possiamo &quot;adottare&quot; una o più parti del Mandala della Terra, così
+    questa estate daremo la possibilità a molti più praticanti di Danzare
+    nel Gonpa.
+    <br>
+    Vi ringraziamo di cuore per il vostro aiuto e partecipazione.
+  </p> 
+
 
 	<br><br>
 	<button  ng-show="!showBuyThis" class="btn btn-large btn-primary" type="button" ng-click="showBuyThis = ! showBuyThis">
-		<i class="icon-shopping-cart icon-white"></i> Buy Now!
+		<i class="icon-shopping-cart icon-white"></i> Donate Now!
 	</button>
 	<br><br>
 
@@ -31,14 +51,17 @@
 		<br>
 		<div class="product">
 			Please,<br>
-			Select the number of Lungta's<br>
-			you wish to purchase (1 pack = 5 flags)
+			Select the kind of donation
 			<br>
 		<select type="text" ng-model="qta">
-			<option ng-repeat="n in range(50)" ng-selected="$index==0" value="{{$index+1}}">{{$index+1}} pack</option>
-
+      <option value="50" selected="selected">Centro Mandala thigle blu e bianco magari </option>
+      <option value="30">Centro Mandala triangoli rossi e verdi e giallo octa. magari si fa</option>
+      <option value="20">poi una section in un Thigle elemento  magari   </option>
+      <option value="30">poi un Triangolo rosso/giallo o Bianco dinuovo</option>
+      <option value="10">poi spazio verde esterno</option>
+      <option value="100">e poi il cerchio blu esterno</option>
 		</select>
-		<span class="total">{{qta*5}} Pounds</span>
+		<span class="total">{{qta}} Euro</span>
 
 			<form ng-submit="addDonation()">
 			<div id="datiDonatore">
@@ -83,7 +106,7 @@
 <!-- 2014
 By buying Lungtas you are supporting the Shang Shung Institute UK Rare Art Project.
 -->
-By buying Lungtas you are supporting the cultural activities of the Shang Shung Institute UK, London Institute of Tibetan Studies.
+
 	<br><br>
 
 <!-- 2014
@@ -122,7 +145,7 @@ Buy your lungtas now and help the Dharma flourish!
 -->
 
 <br>
-<img src="images/home.jpg" style="">
+<img src="images/vajra-dance.jpg" style="">
 <br><br>
 
 <!--

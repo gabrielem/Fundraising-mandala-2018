@@ -95,7 +95,7 @@ angular.module('angularApp')
       {title:'Cinese',suff:'zh'},
     ];
 
-	$scope.qta=1;
+	$scope.qta=50;
 	$scope.pageTitle="Lungta.it";
 
 
@@ -118,7 +118,13 @@ angular.module('angularApp')
     //$scope.footerTxt=$scope.footerTxt_lang.[$scope.locLang];
 
     $scope.payment_types_en=[{name:'Pay with Paypal',value:'Paypal'},{name:'Pay with Bank Transfer',value:'Bank'}];
-	$scope.pages_en = [
+    $scope.pages_en = [
+      {
+        title:'Home',
+        url:'en',
+      }
+    ];
+  $scope.pages_en_ = [
 		{
 			title:'Home',
 			url:'en',
