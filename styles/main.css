@@ -1,0 +1,215 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+
+}
+
+.hero-unit {
+    
+    width: 100%;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    padding: 10px 10px 10px 30px;
+    color:#0088cc;
+    background-image:url('../images/bg-hero.png');
+    background-repeat:no-repeat;
+    background-position:right bottom;
+}
+
+.hero-unit h1 {
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color:#0088cc;
+    font-family: 'Lily Script One', cursive;
+}
+.hero-unit h2 {
+
+font-family: 'Annie Use Your Telescope', cursive;
+}
+.nav > li > a {
+  text-decoration: none;
+  background-color: #88bbff;
+  color:#ffffff;
+}
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav > li > a.sel {
+  text-decoration: none;
+  background-color: #0088cc;
+}
+
+
+#mainContent{}
+#mainContent h2{
+    font-family: 'Lily Script One', cursive;
+    /*font-family: 'Annie Use Your Telescope', cursive;*/
+
+}
+
+
+#sidebar{}
+#sidebar h2{font-size:25px;font-family: 'Annie Use Your Telescope', cursive;}
+
+
+.boxBuy-show-setup, .boxBuy-hide-setup {
+  -webkit-transition:all linear 0.3s;
+  -moz-transition:all linear 0.3s;
+  -ms-transition:all linear 0.3s;
+  -o-transition:all linear 0.3s;
+  transition:all linear 0.3s;
+}
+.boxBuy-show-setup { opacity:0; height: 0; }
+.boxBuy-show-setup.boxBuy-show-start { opacity:1; height: 100px; }
+
+.boxBuy-hide-setup { opacity:1; height: 0; }
+.boxBuy-hide-setup.boxBuy-hide-start { opacity:0; height: 100px; }
+
+
+#cartMini{
+    min-height:100px;
+    background-color:#efefef;
+    padding:9px;
+}
+
+#cartMini i.close{
+display:block;
+font-size:11px;color:#303030;
+text-decoration:underline;
+padding:5px;
+}
+
+#cartMini span.total{
+    margin:0 auto;
+    margin-top:5px;
+    margin-bottom:15px;
+    display:block;
+    font-size:21px;
+    color:#0088cc;
+    
+    padding:9px;
+    width:300px;
+    text-align: center;
+    background-color: #ffffcc;
+}
+
+#cartMini .product{
+  margin:9px 9px 21px 9px;
+  border:1px solid #afafaf;
+  padding:15px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+#datiDonatore{
+margin:0 auto;
+width:300px;
+padding:0 0 10px 0;
+}
+#datiDonatore .riga{
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #efefef;
+  padding:5px;
+  border:1px solid #ffffff;
+}
+#datiDonatore .riga:hover{border:1px solid #afafaf;}
+#datiDonatore .txt{float:left;width:100px;text-align: right;font-size: 12px;padding:5px 5px 0 0;}
+#datiDonatore .field{float:left;width:170px;}
+input.dati {width:160px;border:1px solid #ffffff;}
+input.dati:hover{border:1px solid #afafaf;}
+
+
+
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#selectLang a{display:inline-block;width:25px;height:17px;margin:0 5px 0 0;
+border:3px solid #88bbff;
+filter:alpha(opacity=70);opacity:0.7;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+
+}
+#selectLang a:hover,#selectLang a.sel{border:3px solid #0088cc;filter:alpha(opacity=100);opacity:1.0;}
+
+#selectLang a.en{background-image: url('../images/lang/en.gif');}
+#selectLang a.it{background-image: url('../images/lang/it.gif');}
+#selectLang a.ru{background-image: url('../images/lang/ru.gif');}
+#selectLang a.zh{background-image: url('../images/lang/zh.gif');}
+
+
+span.euroForPya{
+    margin:9px;
+    display:block;
+    font-size:21px;
+    color:#0088cc;
+    
+    padding:9px;
+    width:300px;
+    text-align: center;
+    background-color: #ffffcc;
+    border:1px solid #efefef;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+
+.bankinfo{
+    margin:9px;
+    display:block;
+    font-size:15px;
+    
+    
+    padding:9px;
+    width:90%;
+    text-align: left;
+    background-color: #efefef;
+    border:1px solid #afafaf;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+}
+
+
+
+
+
+
+#footer{
+  background-color: #efefef;
+  padding:10px 0 0 10px;
+}
+
+#footer b.tit{
+  font-family: 'Lily Script One', cursive;
+  display:block;
+  font-size:18px;
+  color:#0088cc;
+}
