@@ -3,7 +3,7 @@
 angular.module('angularApp')
   .controller('MainCtrl', ['$scope','$http','ServiceMsg','$cookieStore','$cookies','$location','$firebase',function ($scope, $http, ServiceMsg, $cookieStore, $cookies, $location, $firebase) {
 
-  	var firebaseCollectionName="lungtaDonation";
+  	var firebaseCollectionName="mandalaDonation";
 	$scope.locLang=$location.$$url.substring(1,3);
 
 	$scope.datiInviati=$cookieStore.get('Dati');
